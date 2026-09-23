@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a Aventura Rios Selvagens para tirar dúvidas ou reservar seu passeio de rafting.">
+  <meta name="author" content="Seu Nome Completo">
+  <title>Fale Conosco - Aventura Rios Selvagens</title>
+  <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+<body>
+
+  <header>
+    <img src="imagens/logo.png" alt="Logotipo Aventura Rios Selvagens" class="logo">
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="passeios.html">Passeios</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Fale Conosco</h1>
+
+    <section class="info-contato">
+      <h2>Informações de Contato</h2>
+      <p><strong>Endereço:</strong> Rua das Corredeiras, 123 - Viamão, RS</p>
+      <p><strong>Telefone:</strong> (51) 99999-9999</p>
+      <p><strong>E-mail:</strong> contato@aventuariosselvagens.com.br</p>
+      <p><strong>Horário:</strong> Todos os dias, das 8h às 18h</p>
+    </section>
+
+    <section class="formulario-contato">
+      <h2>Envie sua Mensagem</h2>
+      <form action="#" method="post">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone">
+
+        <label for="assunto">Assunto</label>
+        <select id="assunto" name="assunto">
+          <option value="duvida">Dúvida</option>
+          <option value="reserva">Reserva de passeio</option>
+          <option value="outro">Outro</option>
+        </select>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+        <button type="submit" class="cta-button">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Aventura Rios Selvagens. Todos os direitos reservados. | Seu Nome Completo</p>
+    <nav class="redes-sociais">
+      <a href="https://facebook.com"><img src="imagens/facebook.svg" alt="Facebook"></a>
+      <a href="https://instagram.com"><img src="imagens/instagram.svg" alt="Instagram"></a>
+      <a href="https://youtube.com"><img src="imagens/youtube.svg" alt="YouTube"></a>
+    </nav>
+  </footer>
+
+</body>
+</html>
