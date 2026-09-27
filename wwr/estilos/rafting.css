@@ -1,12 +1,12 @@
 /* ===== Variáveis ===== */
 :root {
-  --cor-primaria: #0b5d7a;      /* azul rio - títulos */
-  --cor-secundaria: #1e9c8b;    /* verde-água - detalhes */
-  --cor-destaque1: #17324d;     /* azul escuro - texto e overlay */
-  --cor-destaque2: #f2a541;     /* laranja - destaques/botões */
-  --cor-fundo: #f7f7f2;         /* fundo claro */
-  --fonte-titulo: 'Poppins', 'Trebuchet MS', sans-serif;
-  --fonte-body: 'Segoe UI', Arial, sans-serif;
+  --cor-primaria: #0b5d7a; /* azul rio - títulos */
+  --cor-secundaria: #1e9c8b; /* verde-água - detalhes */
+  --cor-destaque1: #17324d; /* azul escuro - texto e overlay */
+  --cor-destaque2: #f2a541; /* laranja - destaques/botões */
+  --cor-fundo: #f7f7f2; /* fundo claro */
+  --fonte-titulo: "Poppins", "Trebuchet MS", sans-serif;
+  --fonte-body: "Segoe UI", Arial, sans-serif;
 }
 
 /* ===== Reset ===== */
@@ -23,20 +23,26 @@ body {
 }
 
 /* ===== Layout geral ===== */
-header, main, footer {
+header,
+main,
+footer {
   width: 840px;
   margin: 0 auto;
 }
 
 /* ===== Títulos ===== */
-h1, h2 {
+h1,
+h2 {
   font-family: var(--fonte-titulo);
   color: var(--cor-primaria);
   text-align: center;
 }
 
 /* ===== Espaçamentos gerais ===== */
-nav, p, section, article {
+nav,
+p,
+section,
+article {
   margin: 16px;
   padding: 8px;
 }
@@ -45,20 +51,29 @@ nav, p, section, article {
 header {
   position: relative;
   z-index: 5;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  justify-content: space-between;
-  padding: 12px 0;
+  gap: 16px;
+  padding: 16px 24px;
   background-color: var(--cor-fundo);
+  border-bottom: 3px solid var(--cor-secundaria);
 }
 
 .logo {
-  width: 90px;
+  width: 70px;
   height: auto;
 }
 
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
 header nav a {
-  margin: 0 12px;
+  margin: 0;
   text-decoration: none;
   color: var(--cor-primaria);
   font-weight: bold;
@@ -118,6 +133,52 @@ header nav a:hover {
   width: 100px;
   margin-left: 12px;
   border-radius: 6px;
+}
+
+/* ===== Seção História ===== */
+.historia-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.historia-conteudo img {
+  width: 220px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.historia-conteudo p {
+  flex: 1;
+  margin: 0;
+}
+
+/* ===== Seção "A aventura está te esperando!" ===== */
+.galeria-aventura {
+  display: flex;
+  gap: 12px;
+}
+
+.galeria-aventura figure {
+  flex: 1;
+  margin: 0;
+  text-align: center;
+}
+
+.galeria-aventura img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.galeria-aventura figcaption {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--cor-primaria);
 }
 
 /* ===== Rodapé ===== */
