@@ -42,7 +42,9 @@ h2 {
 nav,
 p,
 section,
-article {
+article,
+.equipe,
+.resumo-passeios {
   margin: 16px;
   padding: 8px;
 }
@@ -189,17 +191,17 @@ footer {
   padding: 16px 0;
 }
 
-.redes-sociais {
+.socialmedia {
   display: flex;
   justify-content: flex-end;
   gap: 12px;
 }
 
-.redes-sociais a {
+.socialmedia a {
   text-decoration: none;
 }
 
-.redes-sociais img {
+.socialmedia img {
   width: 32px;
   height: 32px;
 }
